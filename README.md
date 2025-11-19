@@ -18,6 +18,7 @@ $ cd robosys2025/
 
 - 実行
 ```
+$ chmod +x prefecture
 $ ./prefecture
 ```
 都道府県名を漢字で入力してください:
