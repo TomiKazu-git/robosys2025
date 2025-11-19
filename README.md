@@ -1,12 +1,11 @@
 # robosys2025
 2025年度千葉工業大学ロボットシステム学で作成した課題1のリポジトリです。
 
-## リポジトリのインストール方法
+## リポジトリのインストール、使用方法
 ```
-
+$ git clone https://github.com/TomiKazu-git/robosys2025
 $ cd robosys2025/
 $ ./prefecture
-
 ```
 
 ## ソフトウェア
