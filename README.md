@@ -19,10 +19,9 @@ $ cd robosys2025/
 - 実行
 ```
 $ chmod +x prefecture
-$ ./prefecture
+$ echo 都道府県名 | ./prefecture 
 ```
-都道府県名を漢字で入力してください:
-と出力されます。
+都道府県名に漢字で入力してください。
 
 ## ソフトウェア
 
