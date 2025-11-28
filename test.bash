@@ -9,14 +9,15 @@ ng () {
 res=0
 
 out=$(seq 北海道 | ./prefecture)
-[ "${out}" = 1 ] || ng "$LINENO"
+[ "${out}" = 0 ] || ng "$LINENO"
+[ "$out" = "北海道 の魅力度ランキングは 1 位です" ] || ng "$LINENO"
 
 
 out=$(echo あ | ./prefecture)
 [ "$?" = 1 ] || ng "$LINENO"
-[ "$out" = "" ] || ng "$LINENO"
+[ "$out" = "あは 都道府県名ではありません" ] || ng "$LINENO"
 
-out=$(echo | ./plus)
+out=$(echo ""| ./prefecture)
 [ "$?" = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
