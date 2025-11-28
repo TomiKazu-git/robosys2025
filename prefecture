@@ -6,38 +6,40 @@ import sys
 
 def load_ranking(file_path):
     ranking = {}
-    with open(file_path, "r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if "：" in line:
-                pref, rank = line.split("：")
-            elif ":" in line:  # 半角コロン対応
-                pref, rank = line.split(":")
-            else:
-                continue
-
-            ranking[pref.strip()] = rank.strip()
-
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if "：" in line:
+                    pref, rank = line.split("：")
+                elif ":" in line:
+                    pref, rank = line.split(":")
+                else:
+                    continue
+                ranking[pref.strip()] = rank.strip()
+    except:
+        pass
     return ranking
 
 
 def main():
     ranking = load_ranking("ranking.txt")
-
     ok = True
 
     for line in sys.stdin:
         pref = line.strip()
 
-        if not pref:
+        if pref == "":
+            print("")
             ok = False
-            continue
+            break
 
         if pref in ranking:
             print(f"{pref} の魅力度ランキングは {ranking[pref]} 位です")
         else:
             print(f"{pref} は 都道府県名ではありません")
             ok = False
+            break
 
     if ok:
         sys.exit(0)
