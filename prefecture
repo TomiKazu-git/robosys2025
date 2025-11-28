@@ -28,6 +28,7 @@ def main():
 
     for line in sys.stdin:
         pref = line.strip()
+
         if not pref:
             ok = False
             continue
@@ -38,10 +39,10 @@ def main():
             print(f"{pref} は 都道府県名ではありません")
             ok = False
 
-        if ok:
-            sys.exit(0)
-        else:
-            sys.exit(1)
+    if ok:
+        sys.exit(0)
+    else:
+        sys.exit(1)
 
 
 if __name__ == "__main__":
