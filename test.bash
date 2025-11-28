@@ -29,7 +29,7 @@ expected="北海道 の魅力度ランキングは 1 位です
 
 out=$(echo "あ" | ./prefecture)
 [ "$?" = 1 ] || ng "$LINENO"
-[ "$out" = "あ は 都道府県名ではありません" ] || ng "$LINENO"
+[ "$out" = "あ は 都道府県名または漢字ではありません" ] || ng "$LINENO"
 
 # 前後スペース入力 
 out=$(echo "  北海道  " | ./prefecture)
@@ -44,7 +44,7 @@ out=$(echo "" | ./prefecture)
 # ひらがな（エラー）
 out=$(echo "ほっかいどう" | ./prefecture)
 [ "$?" = 1 ] || ng "$LINENO"
-[ "$out" = "ほっかいどう は 都道府県名ではありません" ] || ng "$LINENO"
+[ "$out" = "ほっかいどう は 都道府県名または漢字ではありません" ] || ng "$LINENO"
 
 # 混在（OK + NG）
 printf "北海道\nほっかいどう\n沖縄県\n" | ./prefecture > tmp.out
@@ -52,7 +52,7 @@ status=$?
 out=$(cat tmp.out)
 rm tmp.out
 
-expected=$'北海道 の魅力度ランキングは 1 位です\nほっかいどう は 都道府県名ではありません'
+expected=$'北海道 の魅力度ランキングは 1 位です\nほっかいどう は 都道府県名または漢字ではありません'
 [ "$status" = 1 ] || ng "$LINENO"
 [ "$out" = "$expected" ] || ng "$LINENO"
 
