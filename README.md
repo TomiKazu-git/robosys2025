@@ -1,8 +1,6 @@
 # robosys2025
 2025年度千葉工業大学ロボットシステム学で作成した課題1のリポジトリです。
 
-このリポジトリ内のranking.txtは、ブランド総合研究所（https://tiiki.jp/index.php)
-の地域ブランド調査2025 都道府県の魅力度等調査結果を参考に作られています。
 ## 説明
 ![test](https://github.com/TomiKazu-git/robosys2025/actions//workflows/test.yml/badge.svg)
 - 漢字で都道府県名を打つと、その都道府県の都道府県魅力度ランキング２０２５の順位が表示されます。
@@ -51,7 +49,10 @@ $ echo -e "北海道\nほっかいどう\n沖縄県" | ./prefecture
 ```
 $ echo "" | ./prefecture
 
-``` 
+```
+
+このリポジトリ内のranking.txtは、ブランド総合研究所（https://tiiki.jp/index.php)
+の地域ブランド調査2025 都道府県の魅力度等調査結果を参考に作られています。 
 ## ソフトウェア
 
 - Python
