@@ -35,9 +35,9 @@ def main():
             break
 
         if pref in ranking:
-            print(f"{pref} の魅力度ランキングは {ranking[pref]} 位です")
+            print(f"{ranking[pref]}")
         else:
-            print(f"{pref} は 都道府県名または漢字ではありません")
+            print(f"")
             ok = False
             break
 
