@@ -61,6 +61,8 @@ $ echo "" | ./prefecture
 ## テスト環境
 
 - Ubuntu 22.04.5 LTS
+- リモート Ubuntu 22.04.5 LTS（Codename: jammy）
+- bash 5.x
 
 ## ライセンス
 
