@@ -50,7 +50,8 @@ status=$?
 out=$(cat tmp.out)
 rm tmp.out
 
-expected=$'1\n'
+expected=$"1"
+
 [ "$status" = 1 ] || ng "$LINENO"
 [ "$out" = "$expected" ] || ng "$LINENO"
 
