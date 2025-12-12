@@ -30,14 +30,14 @@ def main():
         pref = line.strip()
 
         if pref == "":
-            print("")
+            sys.stderr.write("\n")
             ok = False
             break
 
         if pref in ranking:
             print(f"{ranking[pref]}")
         else:
-            print(f"")
+            sys.stderr.write(f"\n")
             ok = False
             break
 
