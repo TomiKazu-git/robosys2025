@@ -3,6 +3,7 @@
 
 ## 説明
 ![test](https://github.com/TomiKazu-git/robosys2025/actions//workflows/test.yml/badge.svg)
+
 `prefecture` は、**漢字の都道府県名を標準入力から受け取り、その魅力度ランキング（1〜47位）を数字だけで表示するコマンド**です。
 
 - 正しい都道府県名：順位（数値）を出力し、終了コード 0  
