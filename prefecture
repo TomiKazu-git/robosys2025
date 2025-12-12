@@ -30,21 +30,16 @@ def main():
         pref = line.strip()
 
         if pref == "":
-            sys.stderr.write("\n")
             ok = False
             break
 
         if pref in ranking:
-            print(f"{ranking[pref]}")
+            print(ranking[pref])
         else:
-            sys.stderr.write(f"\n")
             ok = False
             break
 
-    if ok:
-        sys.exit(0)
-    else:
-        sys.exit(1)
+    sys.exit(0 if ok else 1)
 
 
 if __name__ == "__main__":
