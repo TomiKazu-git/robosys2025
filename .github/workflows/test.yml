@@ -1,5 +1,4 @@
-name:
-  test:
+name: test
 on:
   push:
 jobs:
