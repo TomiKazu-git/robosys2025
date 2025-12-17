@@ -48,16 +48,12 @@ $printf "北海道\nほっかいどう\n沖縄県\n" | ./prefecture
 
 このリポジトリ内のranking.txtは、ブランド総合研究所（https://tiiki.jp/index.php)
 の地域ブランド調査2025 都道府県の魅力度等調査結果を参考に作られています。 
-## ソフトウェア
-
-- Python
-  - テスト済みバージョン: 3.7~3.12
 
 ## テスト環境
 
 - Ubuntu 22.04.5 LTS
-- リモート Ubuntu 22.04.5 LTS（Codename: jammy）
-- bash 5.x
+- Python
+  - テスト済みバージョン: 3.7~3.12
 
 ## ライセンス
 
