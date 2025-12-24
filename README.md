@@ -51,6 +51,7 @@ $printf "北海道\nほっかいどう\n沖縄県\n" | ./prefecture
 
 ## テスト環境
 
+- GitHub Actions
 - Ubuntu 22.04.5 LTS
 - Python
   - テスト済みバージョン: 3.7~3.12
