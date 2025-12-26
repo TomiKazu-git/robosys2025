@@ -58,7 +58,7 @@ $printf "北海道\nほっかいどう\n沖縄県\n" | ./prefecture
 
 ## ライセンス
 
-- このソフトウェアパッケージは、GPL3.0ライセンスの下、再頒布および使用が許可されます。
+- このソフトウェアパッケージは、GPL3.0の下、再頒布および使用が許可されます。
 - このパッケージのコードは、下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを、本人の許可を得て自身の著作としたものです。
   - [ryuichiueda/my_slides robosys_2025](https://github.com/ryuichiueda/slides_marp/tree/master/robosys2025)
 - © 2025 Kazuki Mitomi
