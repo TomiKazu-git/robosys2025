@@ -50,7 +50,7 @@ status=$?
 out=$(cat tmp.out)
 rm tmp.out
 
-expected=$"1"
+expected="1"
 
 [ "$status" = 1 ] || ng "$LINENO"
 [ "$out" = "$expected" ] || ng "$LINENO"
@@ -58,6 +58,6 @@ expected=$"1"
 
 
 
-[ "${res}" = ] && echo OK
+[ "${res}" = 0 ] && echo OK
 exit $res
 
