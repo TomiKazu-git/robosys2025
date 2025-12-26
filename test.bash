@@ -45,21 +45,16 @@ out=$(echo "ほっかいどう" | ./prefecture)
 [ "$out" = "" ] || ng "$LINENO"
 
 # 混在（OK + NG）
-printf "北海道\nほっかいどう\n沖縄県\n" > tmp.in
-./prefecture < tmp.in > tmp.out
+printf "北海道\nほっかいどう\n沖縄県\n" | ./prefecture > tmp.out
 status=$?
 
 out=$(cat tmp.out)
-rm tmp.in tmp.out
+rm tmp.out
 
 expected="1"
 
 [ "$status" = 1 ] || ng "$LINENO"
 [ "$out" = "$expected" ] || ng "$LINENO"
-
-
-
-
 
 [ "${res}" = 0 ] && echo OK
 exit $res
